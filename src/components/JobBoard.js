@@ -1,10 +1,11 @@
 
+
 import React from 'react'
 
-const JobBoard = ({job:{company,logo,position,location,contract,postedAt,new:isNew},}) => {
+const JobBoard = ({job:{company,tools,logo,position,location,contract,postedAt,languages,new:isNew},}) => {
     
     return (
-        <div className="flex bg-white shadow-lg m-4 p-4">
+        <div className="flex bg-white shadow-lg m-4 p-6">
             
             <div>
                 <img src={logo} alt={company}/>
@@ -17,6 +18,17 @@ const JobBoard = ({job:{company,logo,position,location,contract,postedAt,new:isN
                     {postedAt}&middot;{contract}&middot;{location}
                 </p>
 
+            </div>
+
+            <div className="flex ml-auto items-center">
+                {languages?(
+                    languages.map((lan,ind)=><span key={ind} className="text-indigo-400 bg-indigo-100
+                    font-bold m-2 p-1 rounded">{lan}</span>)
+                ):""}
+
+                {/* {tools?(
+                    tools.map(tool=><span>{tool}</span>)
+                ):""} */}
             </div>
         </div>
     )

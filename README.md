@@ -21,7 +21,9 @@
 4. Passing JobBoard as children component
 5. Passing each job to JobBoard as props
 
-### Data Loading
+### JobBoard component
 
-1. Getting data.json file in assets
-2.
+1. Rendering 3 divs with flex, implementing map array function on some of them
+2. First div logo with style
+3. Second div company name, position, location with some style and flex
+4. Third required languages with style
