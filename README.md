@@ -20,6 +20,7 @@
 3. Rendering with useEffect hook
 4. Passing JobBoard as children component
 5. Passing each job to JobBoard as props
+6. header
 
 ### JobBoard component
 

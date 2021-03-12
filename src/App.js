@@ -12,7 +12,9 @@ const App=()=> {
   console.log(jobs);
   return (
     <div>
-      <h2 className="text-4xl text-center">Hello my friends</h2>
+      <header className="mb-12 bg-indigo-300">
+        <img src="/images/bg-header-desktop.svg" alt="header-img"/>
+      </header>
 
       {jobs.length===0?<div>Fetching the jobs ...</div>:(
         jobs.map(job=>(
